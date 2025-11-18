@@ -7,7 +7,7 @@ define('DB_HOST', 'localhost');
 define('DB_NAME', 'web_basic');
 define('PG_PORT', '5432');
 define('DB_USER', 'postgres');
-define('DB_PASS', 'Muzafar');
+define('DB_PASS', 'Test');
 
 function pdo(): PDO{
     static $pdo = null;
@@ -40,4 +40,5 @@ function validate_csrf($token): bool {
 
 function e($str){
     return htmlspecialchars((string)$str, ENT_QUOTES, 'UTF-8');
+
 }
